@@ -855,6 +855,33 @@ body:hover #cursorGlow{opacity:1}
 }
 </style>
 
+
+<style id="career-trajectory">
+.career-section{position:relative}
+.career-intro{display:grid;grid-template-columns:.9fr 1.1fr;gap:28px;align-items:center;margin-bottom:32px;padding:23px 25px;border:1px solid var(--line);border-radius:20px;background:linear-gradient(135deg,rgba(219,167,70,.055),rgba(78,145,255,.045)),var(--surface)}
+.career-label,.career-evolution-copy>span,.career-education span{color:var(--gold);font-size:.62rem;font-weight:900;letter-spacing:.13em}
+.career-intro h3{margin-top:6px;font-size:1.18rem}.career-intro p{color:var(--muted);font-size:.8rem}
+.career-line{position:relative;display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.career-line::before{content:"";position:absolute;left:8%;right:8%;top:43px;height:2px;background:linear-gradient(90deg,var(--gold),var(--blue),var(--green));opacity:.55}
+.career-item{position:relative;padding-top:64px}
+.career-year{position:absolute;top:0;left:0;color:var(--gold2);font-size:.68rem;font-weight:900;letter-spacing:.08em}
+.career-dot{position:absolute;top:35px;left:10px;width:17px;height:17px;border-radius:50%;background:var(--bg);border:4px solid var(--gold);box-shadow:0 0 0 7px rgba(219,167,70,.08)}
+.career-current .career-dot{border-color:var(--green);box-shadow:0 0 0 7px rgba(66,211,160,.08)}
+.career-card{height:100%;padding:21px;border:1px solid var(--line);border-radius:19px;background:linear-gradient(145deg,var(--surface),color-mix(in srgb,var(--surface2) 82%,transparent));transition:.25s}
+.career-card:hover{transform:translateY(-5px);border-color:rgba(219,167,70,.3);box-shadow:var(--shadow)}
+.career-company{color:var(--gold);font-size:.63rem;font-weight:900;letter-spacing:.1em;text-transform:uppercase}
+.career-card h3{margin-top:8px;font-size:1rem;line-height:1.3}.career-card p{margin-top:10px;color:var(--muted);font-size:.74rem;line-height:1.58}
+.career-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:15px}.career-tags span{padding:5px 8px;border:1px solid var(--line);border-radius:999px;color:var(--muted);background:rgba(255,255,255,.025);font-size:.56rem}
+.career-evolution{display:grid;grid-template-columns:.9fr 1.1fr;gap:22px;margin-top:22px;padding:25px;border:1px solid rgba(78,145,255,.22);border-radius:21px;background:radial-gradient(circle at 90% 20%,rgba(78,145,255,.12),transparent 34%),var(--surface)}
+.career-evolution-copy h3{margin-top:5px;font-size:1.35rem}.career-evolution-copy p{margin-top:8px;color:var(--muted);font-size:.78rem}
+.career-pillars{display:grid;grid-template-columns:1fr 1fr;gap:9px}.career-pillars>div{padding:12px;border:1px solid var(--line);border-radius:12px;background:rgba(255,255,255,.025)}
+.career-pillars b{display:block;color:var(--gold2);font-size:.67rem}.career-pillars small{display:block;margin-top:3px;color:var(--muted);font-size:.56rem}
+.career-education{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:14px}.career-education>div{padding:16px 19px;border:1px solid var(--line);border-radius:15px;background:rgba(255,255,255,.025)}
+.career-education b{display:block;margin-top:5px;font-size:.78rem}.career-education small{display:block;margin-top:3px;color:var(--muted);font-size:.62rem}
+@media(max-width:850px){.career-intro,.career-evolution{grid-template-columns:1fr}.career-line{grid-template-columns:1fr}.career-line::before{left:18px;right:auto;top:10px;bottom:10px;width:2px;height:auto}.career-item{padding:0 0 0 48px}.career-year{position:relative;margin-bottom:9px}.career-dot{top:3px;left:10px}.career-pillars{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.career-pillars,.career-education{grid-template-columns:1fr}}
+</style>
+
 </head>
 <body>
 <canvas id="techBackground" aria-hidden="true"></canvas>
@@ -914,6 +941,82 @@ body:hover #cursorGlow{opacity:1}
  </div>
 </section>
 
+<section id="trajetoria" class="career-section">
+ <div class="container">
+  <div class="section-head reveal-item">
+   <div class="kicker">MINHA TRAJETÓRIA</div>
+   <h2>Da operação à construção de soluções em tecnologia.</h2>
+   <p>Minha trajetória evoluiu da análise de processos e integração de sistemas para uma atuação multidisciplinar em desenvolvimento, dados, BI e automação.</p>
+  </div>
+
+  <div class="career-intro reveal-item">
+   <div>
+    <span class="career-label">EVOLUÇÃO PROFISSIONAL</span>
+    <h3>Processos → Dados → Desenvolvimento → Automação</h3>
+   </div>
+   <p>Ao longo da minha experiência, ampliei a atuação técnica sem perder a visão de negócio: entender o processo, trabalhar os dados e transformar necessidades operacionais em soluções digitais.</p>
+  </div>
+
+  <div class="career-line">
+   <article class="career-item reveal-item">
+    <div class="career-year">2023 — 2025</div>
+    <div class="career-dot"></div>
+    <div class="career-card">
+     <div class="career-company">Stefanini</div>
+     <h3>Base em processos, sistemas e integração</h3>
+     <p>Atuação com gestão de acessos e permissões, análise documental, suporte a empresas credenciadas e levantamento de dados para apoio à gestão.</p>
+     <p>Participação em testes de integração e homologação de sistemas, fortalecendo a compreensão de processos corporativos e ambientes tecnológicos.</p>
+     <div class="career-tags"><span>Processos</span><span>Sistemas</span><span>Integração</span><span>Dados</span></div>
+    </div>
+   </article>
+
+   <article class="career-item reveal-item">
+    <div class="career-year">2025 — 2026</div>
+    <div class="career-dot"></div>
+    <div class="career-card">
+     <div class="career-company">Ilha Service Tecnologia</div>
+     <h3>Evolução para automação e Business Intelligence</h3>
+     <p>Desenvolvimento de automações em Python e dashboards gerenciais em Power BI, aproximando programação, análise de dados e melhoria de processos.</p>
+     <p>Criação de soluções em SharePoint e atuação com integração de sistemas entre empresas credenciadas e plataformas corporativas.</p>
+     <div class="career-tags"><span>Python</span><span>Power BI</span><span>SharePoint</span><span>Automação</span></div>
+    </div>
+   </article>
+
+   <article class="career-item career-current reveal-item">
+    <div class="career-year">2026 — ATUAL</div>
+    <div class="career-dot"></div>
+    <div class="career-card">
+     <div class="career-company">DETRAN-SP</div>
+     <h3>Desenvolvimento, Dados &amp; Automação</h3>
+     <p>Atuação no desenvolvimento de aplicações, scripts e soluções internas com Python, JavaScript e HTML, além de RPAs com regras de negócio, validações, processamento em lote e integração com sistemas legados.</p>
+     <p>Construção de dashboards e indicadores em Power BI e trabalho com SQL e Databricks para tratamento, cruzamento e análise de diferentes fontes de dados.</p>
+     <div class="career-tags"><span>Python</span><span>RPA</span><span>Power BI</span><span>SQL</span><span>Databricks</span><span>JavaScript</span></div>
+    </div>
+   </article>
+  </div>
+
+  <div class="career-evolution reveal-item">
+   <div class="career-evolution-copy">
+    <span>HOJE</span>
+    <h3>Technology Analyst</h3>
+    <p>Meu perfil combina desenvolvimento de software, dados, BI e automação para criar soluções de ponta a ponta — da análise da necessidade e modelagem dos dados até a implementação, visualização e automação do processo.</p>
+   </div>
+   <div class="career-pillars">
+    <div><b>DEV</b><small>Python · JavaScript · HTML · Git/GitHub</small></div>
+    <div><b>DATA &amp; BI</b><small>Power BI · DAX · SQL · Databricks · Pandas</small></div>
+    <div><b>AUTOMAÇÃO</b><small>RPA · Selenium · Power Automate · Excel</small></div>
+    <div><b>NEGÓCIO</b><small>Processos · Regras · Integração · Indicadores</small></div>
+   </div>
+  </div>
+
+  <div class="career-education reveal-item">
+   <div><span>FORMAÇÃO</span><b>Tecnólogo em Gestão da Tecnologia da Informação</b><small>Centro Universitário Anhanguera · Concluído</small></div>
+   <div><span>EVOLUÇÃO CONTÍNUA</span><b>Dados, desenvolvimento e automação</b><small>Databricks AI/BI · Python · Power BI · Análise de Dados</small></div>
+  </div>
+ </div>
+</section>
+
+
 <section id="projetos">
  <div class="container">
   <div class="section-head reveal-item"><div class="kicker"><span data-pt="Cases selecionados" data-en="Selected cases">Cases selecionados</span></div><h2><span data-pt="Projetos que conectam processo, automação e dados." data-en="Projects connecting processes, automation and data.">Projetos que conectam processo, automação e dados.</span></h2><p><span data-pt="As informações internas foram preservadas. Cada case apresenta o problema, a solução técnica e o valor entregue." data-en="Internal information has been preserved. Each case presents the problem, technical solution and delivered value.">As informações internas foram preservadas. Cada case apresenta o problema, a solução técnica e o valor entregue.</span></p></div>
@@ -970,6 +1073,7 @@ body:hover #cursorGlow{opacity:1}
   </div>
  </div>
 </section>
+
 
 <section id="tecnologias">
  <div class="container">
